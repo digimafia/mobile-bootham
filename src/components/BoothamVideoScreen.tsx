@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { publicAsset } from "../publicAsset";
 
 type Props = { onNext: () => void };
 
@@ -33,7 +34,7 @@ export default function BoothamVideoScreen({ onNext }: Props) {
         <video
           ref={videoRef}
           className="bootham-background-video"
-          src="/booth-video.mp4"
+          src={publicAsset("booth-video.mp4")}
           playsInline
           autoPlay
           loop

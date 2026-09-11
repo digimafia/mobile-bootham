@@ -1,5 +1,6 @@
 import type { Dispatch, FormEvent, SetStateAction } from "react";
 import type { KidDetails } from "../App";
+import { publicAsset } from "../publicAsset";
 
 type Props = {
   kid: KidDetails;
@@ -14,7 +15,10 @@ export default function KidFormScreen({ kid, setKid, onSubmit }: Props) {
   };
 
   return (
-    <section className="screen content-screen source-image-screen">
+    <section
+      className="screen content-screen source-image-screen"
+      style={{ backgroundImage: `url(${publicAsset("bootham-background.png")})` }}
+    >
       <div className="source-image-overlay" />
       <div className="form-card">
         <div className="ghost-icon">👻</div>

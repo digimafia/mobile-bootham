@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { publicAsset } from "../publicAsset";
 
 type Props = { onNext: () => void };
 
@@ -30,7 +31,7 @@ export default function EntranceScreen({ onNext }: Props) {
       <video
         ref={videoRef}
         className="door-video"
-        src="/door-open.mp4"
+        src={publicAsset("door-open.mp4")}
         playsInline
         preload="auto"
         onEnded={onNext}

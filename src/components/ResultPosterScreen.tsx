@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { toBlob } from "html-to-image";
 import type { KidDetails } from "../App";
+import { publicAsset } from "../publicAsset";
 
 type Props = { kid: KidDetails; onRestart: () => void };
 type Action = "download" | null;
@@ -80,7 +81,7 @@ export default function ResultPosterScreen({ kid, onRestart }: Props) {
       <div
         ref={posterRef}
         className="poster"
-        style={{ backgroundImage: 'url("/poster.png")' }}
+        style={{ backgroundImage: `url(${publicAsset("poster.png")})` }}
       >
         <div className="poster-content">
           <p className="poster-kicker">MOBILE BOOTHAM WARNING</p>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { publicAsset } from "../publicAsset";
 
 type Props = { onComplete: () => void };
 
@@ -24,7 +25,7 @@ export default function CheckingScreen({ onComplete }: Props) {
     <section className="screen checking-screen">
       <video
         className="loading-background-video"
-        src="/loading.mp4"
+        src={publicAsset("loading.mp4")}
         autoPlay
         muted
         loop
