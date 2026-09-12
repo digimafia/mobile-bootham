@@ -1,5 +1,5 @@
 const COUNTER_BADGE_URL =
-  "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdigimafia.github.io%2Fmobile-bootham%2F&title=Visitors&edge_flat=false";
+  "https://visitor-badge.laobi.icu/badge?page_id=digimafia.mobile-bootham";
 
 export default function VisitorCounter() {
   return (
