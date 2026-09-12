@@ -295,8 +295,7 @@ button:disabled { cursor: wait; opacity: .65; }
   position: fixed;
   z-index: 20;
   top: max(14px, env(safe-area-inset-top));
-  left: 50%;
-  transform: translateX(-50%);
+  right: max(14px, env(safe-area-inset-right));
   display: inline-flex;
   align-items: center;
   gap: 8px;
