@@ -313,5 +313,5 @@ button:disabled { cursor: wait; opacity: .65; }
   text-transform: uppercase;
   pointer-events: none;
 }
-.visitor-counter strong { color: #b6ff3b; font-size: 13px; letter-spacing: .03em; }
+.visitor-counter strong { color: #b6ff3b; font-size: 13px; letter-spacing: .03em; }\n.visitor-counter img { display: block; height: 18px; width: auto; }
 .visitor-counter__dot { width: 7px; height: 7px; border-radius: 50%; background: #b6ff3b; box-shadow: 0 0 9px #b6ff3b; }
