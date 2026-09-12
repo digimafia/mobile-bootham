@@ -4,6 +4,7 @@ import CheckingScreen from "./components/CheckingScreen";
 import EntranceScreen from "./components/EntranceScreen";
 import KidFormScreen from "./components/KidFormScreen";
 import ResultPosterScreen from "./components/ResultPosterScreen";
+import VisitorCounter from "./components/VisitorCounter";
 import "./styles.css";
 
 export type KidDetails = {
@@ -26,6 +27,7 @@ export default function App() {
 
   return (
     <main className="app-shell">
+      <VisitorCounter />
       {step === 0 && <EntranceScreen onNext={next} />}
       {step === 1 && <BoothamVideoScreen onNext={next} />}
       {step === 2 && <KidFormScreen kid={kid} setKid={setKid} onSubmit={next} />}
