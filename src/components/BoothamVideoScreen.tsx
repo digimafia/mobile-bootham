@@ -37,7 +37,7 @@ export default function BoothamVideoScreen({ onNext }: Props) {
           src={publicAsset("booth-video.mp4")}
           playsInline
           autoPlay
-          loop
+          onEnded={onNext}
           onError={() => setVideoUnavailable(true)}
         />
       ) : (

@@ -110,8 +110,13 @@ button:hover:not(:disabled) {
 }
 button:hover:not(:disabled)::before { top: auto; right: 48px; bottom: -32px; box-shadow: 20px 20px 20px 30px #a21caf; }
 button:hover:not(:disabled)::after { right: -32px; }
-button:active:not(:disabled) { transform: translateY(0); }
+button:active:not(:disabled) { animation: button-press .18s ease-out; transform: translateY(1px) scale(.96); }
 button:disabled { cursor: wait; opacity: .65; }
+@keyframes button-press {
+  0% { filter: brightness(1); }
+  45% { filter: brightness(1.35); }
+  100% { filter: brightness(1); }
+}
 .glow-btn { box-shadow: 0 0 12px rgba(162,28,175,.76), 0 0 34px rgba(139,92,246,.45), 0 0 65px rgba(253,164,175,.22); animation: button-glow 1.6s ease-in-out infinite alternate; }
 @keyframes button-glow {
   from { box-shadow: 0 0 10px rgba(162,28,175,.64), 0 0 24px rgba(139,92,246,.34), 0 0 44px rgba(253,164,175,.14); }
